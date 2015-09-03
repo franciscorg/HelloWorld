@@ -11,5 +11,10 @@
 	<mvc:annotation-driven enable-matrix-variables="true"></mvc:annotation-driven>
 
 	<import resource="controladores.xml"/>
+	
+	<bean class="org.springframework.web.servlet.view.InternalResourceViewResolver">
+		<property name="prefix" value="/WEB-INF/jsp/"></property>
+		<property name="suffix" value=".jsp"></property>
+	</bean>
 
 </beans>
